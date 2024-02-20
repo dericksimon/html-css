@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+#principal {
+   background: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.801), url("../imagens/torre-de-tesla.jpg"));
+   background-position: center;
+   background-size: cover;
+   height: 85vh;
+   
+
+}

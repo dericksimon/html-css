@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+:root {
+    --color1: #0A7DEF;
+    --color2: #daf018e0;
+    --color3: #8d964293;
+    --color4: #a04a4452;
+
+    --font-principal: 'PT Sans', sans-serif;
+    --font-special: 'Protest Riot', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header { 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(../image/fundo.jpg);
+    background-size: 100vw;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    color: white;
+    background-color: var(--color4);
+    font-family: 'PT Sans',sans-serif;
+}
+.logo {
+    font-size: 2.5em;
+    font-family: var(--font-special);
+    color: var(--color2);
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.637);
+    padding: 0 15px;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+.menu ul a li {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: var(--color2);
+    padding: 5px 15px;
+}
+.menu ul a li:hover {
+    background-color: var(--color3);
+    color: var(--color2);
+    border-radius: 8px;
+    padding: 5px 10px;
+
+}
+.login a {
+    text-decoration: none;
+    background-color: var(--color1);
+    color: wheat;
+    padding: 10px 35px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 3px;
+}
+aside {
+    position: absolute;
+    top: 50%;
+    left: 26%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+aside h1 {
+    color: var(--color2);
+    font-size: 2em;
+    font-family: var(--font-special);
+    max-width: 300px;
+    font-weight: normal;
+    text-shadow: 1px 3px 3px var(--color3);
+}
+aside p {
+    color: wheat;
+    font-size: 1.2em;
+    font-family: var(--font-principal);
+    max-width: 400px;
+}
+button {
+    text-decoration: none;
+    background-color: var(--color1);
+    color: wheat;
+    padding: 10px 35px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+
