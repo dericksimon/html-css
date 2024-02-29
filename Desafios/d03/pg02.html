@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image</title>
+    <style>
+       
+        div.square {
+            display: inline-block;
+            background-color: antiquewhite;
+            height: 350px;
+            width: 350px;
+            border: 2.5px solid black;
+            border-radius: 5px;
+            border-color: rgb(250, 148, 14);
+        }
+        div.cube {
+            display: inline-block;
+            background-color: antiquewhite;
+            height: 350px;
+            width: 350px;
+            border: 2.5px solid rgba(0, 0, 0, 0.514);
+            border-radius: 5px;
+        }
+        #color {
+            background-color: blueviolet;
+        }
+        #linear {
+            background-image: linear-gradient(to bottom, red 10%, orange 50%, yellow);
+        }
+        #image {
+            background-image: url('image/wallppp\ 1.jpg');
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </main>
+    <footer>
+        <div class="cube" id="color"></div>
+        <div class="cube" id="linear"></div>
+        <div class="cube" id="image"></div>
+    </footer>
+
+</body>
+</html>
