@@ -30,6 +30,24 @@ header a, footer a {
 header a:hover, footer a:hover {
     text-decoration: underline;
 }
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: rgb(53, 52, 52);
+    color: white;
+}
+section.imagem > p {
+    background-color: rgb(31, 31, 31);
+    width: 300px;
+}
 footer {
     background-color: black;
     text-align: center;
