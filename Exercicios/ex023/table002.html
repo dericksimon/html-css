@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+            padding: 10px;
+        }
+        td, th {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        thead, tfoot {
+            background-color: rgba(0, 0, 0, 0.582);
+            color: white;
+        }
+        td.num {
+            text-align: right;
+        }
+        th.state {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE 
+            CAPTION - Legenda no inicio
+            THEAD
+                TR, TD , TH
+            TBODY
+                TR, TD , TH
+            TFOOT
+                TR, TD , TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="state">São Paulo</th>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <th class="state">Minas Gerais</th>
+                <td class="num">20 538 718</td>
+            </tr>
+            <tr>
+                <th class="state">Rio de Janeiro</th>
+                <td class="num">16 054 524</td>
+            </tr>
+            <tr>
+                <th class="state">Bahia</th>
+                <td class="num">14 141 626</td>
+            </tr>
+            <tr>
+                <th class="state">Paraná</th>
+                <td class="num">11 444 380</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de Habitantes</th>
+            <td><strong>203 062 512</strong></td>
+        </tfoot>
+        <!--
+            TD - Sempre que for um dado na tabela
+            TH - Sempre que for um título na tabela
+            TR - Linhas da tabela
+        -->
+    </table>
+</body>
+</html>
