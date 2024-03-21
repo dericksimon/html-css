@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tauri&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+:root {
+    --color1: #A61CD9;
+    --color2: #4a3cec;
+    --color3: #DB244A;
+    --color4: #D91CB3;
+    --color5: #721CD9;
+
+    --fontmain: "Tauri", sans-serif;
+    --fonttitle: "Beth Ellen", cursive;
+    --fontfont: "Madimi One", sans-serif;
+    --fontfun: "Rock Salt", cursive;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: var(--color5);
+}
+header {
+    margin: auto;
+    height: 200px;
+    width: 100%;
+    background-color: var(--color2);
+    text-align: center;
+}
+ header > h1 {
+    font-family: var(--fontfun);
+    font-weight: bold;
+    color: white;
+    font-size: 2.5em;
+    padding-left: 30px;
+    padding-top: 40px;
+ }
+.enjoybt {
+     background-color: var(--color4);
+     border: none;
+     color: white;
+     padding: 9px;
+     border-radius: 7px;
+     text-align: center;
+     font-size: 1.1em;
+     font-family: var(--fontmain);
+}
+.enjoybt:hover {
+    background-color: var(--color2);
+    border: 3px solid var(--color4);   
+}
+.leng {
+    background-color: var(--color4);
+    color: white;
+    padding: 7px;
+    border-radius: 7px;
+    font-family: var(--fontmain);
+    font-size: 1.1em;
+}
+main {
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+    margin-left: 15%;
+    text-indent: 23px;
+}
+main > p{
+    font-family: var(--fontfont);
+    font-size: 1.2em;
+    line-height: 1.7em;
+}
+
